@@ -27,13 +27,7 @@ class Form extends Component {
         this.handleEditProduct = this.handleEditProduct.bind(this)
     }
 
-    // componentDidUpdate(oldProps) {
-    //     let { id, name, price, img } = this.props.product;
-    //     if (oldProps.product.id !== this.props.product.id) {
-    //         this.setState({ id, name, price, img, edit: true });
-    //     }
-    // }
-
+   
     componentDidMount(){
         // this.getInventory;
         let { id } = this.props.match.params;
@@ -47,12 +41,7 @@ class Form extends Component {
         }
     }
     
-    // getInventory(){
-    //     axios.get(baseUrl)
-    //     .then(res=> this.setState({ products: res.data }))
-    //     console.log(this.state)
-    //     console.log('api mounted')
-    // }
+ 
 
 
     handleUrlChange(url){
