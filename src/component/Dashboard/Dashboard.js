@@ -43,7 +43,7 @@ class Dashboard extends Component{
     render(){
             return(                
                 <div className="prod-container" > 
-                <h1>Product</h1>
+                
                     {this.state.products.map((val)=>{
                     return <Product key = {val.id} deleteProduct = {this.deleteProduct} getInventory={this.getInventory} selection={val} />
                     })}

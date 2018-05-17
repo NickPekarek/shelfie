@@ -29,7 +29,7 @@ class Form extends Component {
 
    
     componentDidMount(){
-        // this.getInventory;
+     
         let { id } = this.props.match.params;
         if (id) {
             axios.get(`http://localhost:4000/api/product/${id}`)
@@ -107,7 +107,7 @@ class Form extends Component {
     return(    
         <div className='form'> 
 
-            <img src={this.state.img} alt={this.state.name}/> <br></br>
+            <img className="formImage" src={this.state.img} alt={this.state.name}/> <br></br>
 
             <p>Image URL:</p>
             <input  onChange={e => this.handleUrlChange(e.target.value)} /><br></br>
